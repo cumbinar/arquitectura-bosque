@@ -17,6 +17,7 @@ body{
     font-family: var(--fuentePrincipal);
     font-size: 1.6rem;
     line-height: 1.8;
+    background-color: bisque;
 }
 
 h1, h2, h3{
