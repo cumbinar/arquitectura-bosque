@@ -202,3 +202,109 @@ img{
     margin: 0;
     line-height: 1;
 }
+/**NOSOTROS**/
+
+.nosotros {
+  display: grid;
+  grid-template-rows: 1fr .9fr;
+  background-image: url(img/nosotros.jpg);
+  /* height: 80%; */
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+@media(min-width: 992PX){
+    .nosotros{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.contenido-nosotros{
+  background-color: var(--blanco);
+  padding: 3rem;
+
+}
+
+@media(min-width: 992px){
+    .contenido-nosotros{
+        grid-column: 2 / 4;
+    }
+}
+
+.contenido-nosotros h2,
+.contenido-nosotros p{
+    margin-bottom: 4rem;
+}
+
+/**MODELOS**/
+
+.modelo{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    margin-bottom: 5rem ;
+}
+.modelo:last-of-type{
+    margin-bottom: 0;
+}
+
+@media(min-width: 992px){
+    .modelo{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+main h2{
+    text-align: center;
+}
+.contenido-modelo{
+    padding: 5rem;
+    background-color: var(--blanco);
+}
+
+.basico{
+    background-image: url(img/modelo_basico.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+@media(min-width: 992px){
+
+    .basico{
+        background-position: top right;
+    }
+    .basico .contenido-modelo{
+        grid-row: 2 / 3;
+        padding: 2rem 2rem 2rem 0;
+    }
+}
+.premier{
+    background-image: url(img/modelo_premier.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+@media(min-width: 992px){
+    .premier{
+        background-position: top left;
+    }
+    .premier .contenido-modelo{
+        grid-column: 2 / 3;
+        padding: 0 0 2rem 2rem ;
+    }
+}
+
+.elite{
+background-image: url(img/modelo_elite.jpg);
+background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+@media(min-width: 992px){
+    .elite{
+        background-position: top right;
+    }
+    .elite .contenido-modelo{
+        grid-column: 1 / 2;
+        padding: 2rem 2rem 0 0;
+    }
+}
