@@ -219,7 +219,7 @@ img{
 }
 .contenido-nosotros{
   background-color: var(--blanco);
-  padding: 5rem;
+  padding: 3rem;
 
 }
 
@@ -232,4 +232,33 @@ img{
 .contenido-nosotros h2,
 .contenido-nosotros p{
     margin-bottom: 4rem;
+}
+
+/**MODELOS**/
+
+.modelo{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+.contenido-modelo{
+    padding: 5rem;
+    background-color: var(--blanco);
+}
+
+.basico{
+    background-image: url(img/modelo_basico.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.premier{
+    background-image: url(img/modelo_premier.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.elite{
+background-image: url(img/modelo_elite.jpg);
+background-repeat: no-repeat;
+    background-position: bottom center;
 }
